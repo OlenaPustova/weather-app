@@ -170,11 +170,11 @@ ${data.list
 `;
 
   const list = document.querySelector(".five-days__list").children;
-  console.log(list);
+  // console.log(list);
   for (let i = 0; i < list.length; i++) {
-    console.log(e);
-    console.log(e.target);
-    console.log(e.target.dataset);
+    // console.log(e);
+    // console.log(e.target);
+    // console.log(e.target.dataset);
     if (i === Number(e.target.dataset.index)) {
       list[i].classList.add("active");
     } else {
