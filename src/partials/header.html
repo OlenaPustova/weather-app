@@ -1,0 +1,45 @@
+<header>
+  <div class="container">
+    <form action="" class="thumb-input">
+      <button id="search" type="button">
+        <svg class="thumb-input__location" width="22" height="22">
+          <use href="./images/symbol-defs.svg#icon-location"></use>
+        </svg>
+      </button>
+      <input
+        name="name-city"
+        type="text"
+        class="thumb-input__text"
+        placeholder="Enter the city"
+      />
+      <button id="favorites" type="button">
+        <svg class="thumb-input__star" width="22" height="22">
+          <use href="./images/symbol-defs.svg#icon-star"></use>
+        </svg>
+      </button>
+    </form>
+    <div class="glide favorite-city">
+      <div class="glide__track favorite-city__wrap" data-glide-el="track">
+        <ul class="glide__slides favorite-city__list"></ul>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button
+          class="glide__arrow glide__arrow--left btnPrev hidden"
+          data-glide-dir="<"
+        >
+          <svg class="favorite-city__icon" width="22" height="22">
+            <use href="./images/symbol-defs.svg#icon-prev"></use>
+          </svg>
+        </button>
+        <button
+          class="glide__arrow glide__arrow--right btnNext hidden"
+          data-glide-dir=">"
+        >
+          <svg class="favorite-city__icon" width="22" height="22">
+            <use href="./images/symbol-defs.svg#icon-next"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

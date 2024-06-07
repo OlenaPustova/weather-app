@@ -1,0 +1,54 @@
+<div class="chart">
+  <div class="show-chart__wrap hidden">
+    <p class="show-chart__text">Show Chart</p>
+    <button class="show-chart__btn">&#10095;</button>
+  </div>
+
+  <div class="container">
+    <div class="chart-wrap hidden">
+      <div class="hide-chart__wrap-btn">
+        <p class="hide-chart__text">Hide Chart</p>
+        <button class="hide-chart__btn">&#10095;</button>
+      </div>
+
+      <div class="chart-labels">
+        <p class="chart-labels__awerage">AWERAGE:</p>
+
+        <ul class="chart-labels__list">
+          <li id="temperature" class="chart-labels__item">
+            <div class="chart-labels__item-pre-temp"></div>
+            <p class="chart-labels__item-text">— Temperature,</p>
+            <p class="chart-labels__item-post-temp">C°</p>
+          </li>
+
+          <li id="humidity" class="chart-labels__item">
+            <div class="chart-labels__item-pre-hum"></div>
+            <p class="chart-labels__item-text selected">— Humidity,</p>
+            <p class="chart-labels__item-post-hum">%</p>
+          </li>
+
+          <li id="wind" class="chart-labels__item">
+            <div class="chart-labels__item-pre-wind"></div>
+            <p class="chart-labels__item-text selected">— Wind Speed,</p>
+            <p class="chart-labels__item-post-wind">m/s</p>
+          </li>
+
+          <li id="atmospherePressure" class="chart-labels__item">
+            <div class="chart-labels__item-pre-atm"></div>
+            <p class="chart-labels__item-text selected">
+              — Atmosphere Pressure,
+            </p>
+            <p class="chart-labels__item-post-atm">m/m</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="chart-box">
+        <canvas id="myChart-temperature"></canvas>
+        <canvas id="myChart-humidity" class="hidden"></canvas>
+        <canvas id="myChart-wind" class="hidden"></canvas>
+        <canvas id="myChart-atmospherePressure" class="hidden"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
