@@ -8,6 +8,7 @@ export const glideHours = new Glide(".glide-hours", {
   // focusAt: 0,
   // swipeThreshold: false,
   // dragThreshold: false,
+  perTouch: 1,
   // bound: true,
 
   // gap: 10,
