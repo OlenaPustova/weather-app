@@ -1,0 +1,83 @@
+.favorite-city {
+  width: calc(100% - 60px);
+  margin: 12px auto 0;
+  height: 26px;
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
+
+  &__wrap {
+    margin: 0 auto;
+  }
+
+  &__list {
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 12px;
+    margin-right: 5px;
+    border-radius: 20px;
+    background: rgba(16, 33, 54, 0.5);
+
+    &:hover,
+    &:focus {
+      background: rgb(16, 33, 54);
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+    color: #fff;
+    margin-right: 10px;
+  }
+
+  &__del {
+    background-image: url(../images/close.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    outline: none;
+    padding: 0;
+  }
+}
+
+header {
+
+  .btnPrev,
+  .btnNext {
+    opacity: 0.5;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: opacity 200ms linear;
+    outline: none;
+
+    &:hover,
+    &:hover svg {
+      opacity: 1;
+    }
+  }
+
+  .btnPrev {
+    left: -30px;
+  }
+
+  .btnNext {
+    right: -30px;
+  }
+}

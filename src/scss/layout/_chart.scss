@@ -1,0 +1,265 @@
+@keyframes animationChartDesk {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-240px);
+  }
+}
+
+@keyframes animationChartTablet {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-290px);
+  }
+}
+
+.chart.animation {
+  @media screen and (min-width: 768px) {
+    animation-name: animationChartTablet;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @media screen and (min-width: 1280px) {
+    animation-name: animationChartDesk;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+}
+
+.show-chart__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 20px;
+  padding-bottom: 35px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 30px;
+    padding-bottom: 55px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+}
+
+.show-chart__text {
+  margin-right: 10px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  cursor: pointer;
+  color: #ff6b09;
+}
+
+.show-chart__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+
+  transform: rotate(90deg);
+
+  font-size: 12px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+}
+
+.chart-wrap {
+  width: 100%;
+  height: 550px;
+  margin: 0 auto 25px;
+  background-color: rgba(16, 33, 54, 0.8);
+  border-radius: 34px;
+  padding: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    height: 500px;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1060px;
+  }
+}
+
+.hide-chart__wrap-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hide-chart__text {
+  margin-right: 10px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ff6b09;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.hide-chart__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+
+  transform: rotate(270deg);
+
+  font-size: 12px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+}
+
+.chart-labels {
+  margin-top: 10px;
+  margin-left: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
+    margin-top: 40px;
+  }
+}
+
+.chart-labels__awerage {
+  margin-bottom: 5px;
+  color: (rgba(255, 255, 255, 0.54));
+  font-size: 12px;
+  line-height: 14px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 0;
+    margin-right: 25px;
+  }
+}
+
+.chart-labels__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 30px;
+  }
+}
+
+.selected {
+  text-decoration: line-through;
+}
+
+.chart-labels__item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 5px 0px;
+  cursor: pointer;
+  text-decoration-color: rgba(255, 255, 255, 0.54);
+  font-size: 14px;
+  line-height: 17px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  div {
+    width: 12px;
+    height: 12px;
+  }
+
+  .chart-labels__item-text {
+    margin: 0 5px;
+    color: rgba(255, 255, 255, 0.54);
+  }
+}
+
+.chart-labels__item-pre-temp {
+  background-color: #ff6b09;
+}
+
+.chart-labels__item-pre-hum {
+  background-color: #0906eb;
+}
+
+.chart-labels__item-pre-wind {
+  background-color: #ea9a05;
+}
+
+.chart-labels__item-pre-atm {
+  background-color: #067806;
+}
+
+.chart-labels__item-post-temp {
+  color: #ff6b09;
+}
+
+.chart-labels__item-post-hum {
+  color: #0906eb;
+}
+
+.chart-labels__item-post-wind {
+  color: #ea9a05;
+}
+
+.chart-labels__item-post-atm {
+  color: #067806;
+}
+
+.chart-box {
+  margin: 0 auto;
+  width: 100%;
+  height: 330px;
+}
+
+#myChart {
+  width: 500px;
+  height: 500px;
+}

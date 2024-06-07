@@ -1,0 +1,15 @@
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
+@import 'node_modules/@glidejs/glide/src/assets/sass/glide.theme';
+
+@import './base/reset';
+@import './base/common';
+@import './base/container';
+@import './base/visually-hidden';
+
+@import './layout/header';
+@import './layout/home-buttons.scss';
+@import './layout/home';
+@import './layout/favorite-list';
+@import './layout/quote';
+@import './layout/five-days';
+@import './layout/chart';
