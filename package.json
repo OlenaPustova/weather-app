@@ -20,6 +20,9 @@
     "posthtml-include": "^2.0.1"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.6.1"
+    "@glidejs/glide": "^3.6.1",
+    "chart.js": "^4.4.3",
+    "lodash.debounce": "^4.0.8",
+    "notiflix": "^3.2.7"
   }
 }
